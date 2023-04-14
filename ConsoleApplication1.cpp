@@ -21,13 +21,18 @@ void input()
 	//Accept array element
 	cout << "\n------------------\n";
 	cout << "Enter array element";
+	cout << "\n------------------\n";
+	for (i = 0; i < n; i++) {
+		cout << "<" << (i + 1) << "> ";
+		cin >> arr[i];
+	}
 
 }
 void LinearSearch() {
 	char ch;
 	int comparison; //Number of comparison
 
-	do 
+	do
 	{
 		//Accept the number of search
 		cout << "Enter the element you want to search\n\n";
@@ -38,11 +43,11 @@ void LinearSearch() {
 		for (i = 0;i < n;i++)
 		{
 			comparison++;
-				if (arr[i] == item)    //condition check
-				{
-					cout << "\n" << item << "\nfound at position" << (i + 1) << endl;
-					break;
-				}
+			if (arr[i] == item)    //condition check
+			{
+				cout << "\n" << item << "\nfound at position" << (i + 1) << endl;
+				break;
+			}
 		}
 
 		if (i == n)
