@@ -40,13 +40,13 @@ void LinearSearch() {
 			comparison++;
 				if (arr[i] == item)    //condition check
 				{
-					cout << "\n" << item << "found at position" << (i + 1) << endl;
+					cout << "\n" << item << "\nfound at position" << (i + 1) << endl;
 					break;
 				}
 		}
 
 		if (i == n)
-			cout << "\n" << item << "not found  in the array";
+			cout << "\n" << item << "\nnot found  in the array";
 		cout << "\nNumber of comparison: " << comparison << endl;
 		cout << "\ncountinu search (y/n): ";
 		cin >> ch;
