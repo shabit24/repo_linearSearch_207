@@ -26,4 +26,13 @@ void input()
 void LinearSearch() {
 	char ch;
 	int comparison; //Number of comparison
+
+	do 
+	{
+		//Accept the number of search
+		cout << "Enter the element you want to search\n\n";
+		int item;
+		cin >> item;
+	}
+
 }
