@@ -33,6 +33,30 @@ void LinearSearch() {
 		cout << "Enter the element you want to search\n\n";
 		int item;
 		cin >> item;
-	}
 
+		comparison = 0;
+		for (i = 0;i < n;i++)
+		{
+			comparison++
+				if (arr[i] == item)
+				{
+					cout << "\n" << item << "found at position" << (i + 1) << end;
+					break;
+				}
+		}
+
+		if (i == n)
+			cout << "\n" << item << "not found  in the array";
+		cout << "\nNumber of comparison: " << comparison << end;
+		cout << "\ncountinu search (y/n): ";
+		cin >> ch;
+
+	} while ((ch == 'y') || (ch == 'Y');
+
+}
+
+int main() {
+	input();
+	LinearSearch();
+	return 0;
 }
